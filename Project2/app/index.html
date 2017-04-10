@@ -4,6 +4,12 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link href = "C:\Users\ti153451\Documents\GitHub\Project2\app\styles\main.scss" rel = "stylesheet">-->
+    <!--<link rel="stylesheet" type="text/css" href="fullpage.css" />-->
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="lib/cntl.css">
     <title>GitHub</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -11,50 +17,153 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/fullpage.js/dist/jquery.fullpage.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    
+
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
+  <style>
+    #examplesList,caption,th{text-align:left}blockquote,body,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0}#download a,#fullPage-nav li a,#menu li a,a{text-decoration:none}#download,#download:hover{text-shadow:0 -1px 0 rgba(0,0,0,.25)}.section,.wrap{position:relative}table{border-spacing:0}abbr,acronym,fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-weight:400;font-style:normal}strong{font-weight:700}ol,ul{list-style:none}h1,h2,h3,h4,h5,h6{font-weight:400;font-size:100%;color:#f9f9f9}body,h2{color:#333;color:rgba(0,0,0,.5)}q:after,q:before{content:''}body{  font-family: 'Roboto', sans-serif;background-color:#1BBC9B}body,html{overflow:hidden}#fullpage,.section,body,html{height:100%}.wrap{margin-left:auto;margin-right:auto;width:960px}h1{font-size:6em}h2,p{font-size:2em; color:#f9f9f9}.section{text-align:left}.twitter-share-button{position:fixed!important;z-index:99;right:149px}#infoMenu,#menu{z-index:70;position:fixed}#github-stars-button{padding-top:20px;margin:0 auto}#menu li{display:inline-block;margin:10px;color:#000;background:#fff;background:rgba(255,255,255,.5);-webkit-border-radius:10px;border-radius:10px}#menu li.active{background:#666;background:rgba(0,0,0,.5);color:#fff}#menu li a,#menu li.active a:hover{color:#000}#menu li:hover{background:rgba(255,255,255,.8)}#menu li a,#menu li.active a{padding:9px 18px;display:block}#examplesList ul,#menu{padding:0}#examplesList ul li a:hover,#infoMenu{color:#f2f2f2}#menu{top:0;left:0;height:40px;width:100%;margin:0}#usedBy{background-image:url(imgs/used-by-fullpage.png?v=2);margin:50px auto 0;display:block;height:127px;width:402px}#section0 img,#section1 img{margin:20px 0 0}#section2 img{margin:20px 0 0 52px}#section3 img{bottom:0;position:absolute;margin-left:-420px;}.intro p{width:50%;margin:0 auto;font-size:1.5em}.twitter-share-button{top:9px}#fullPage-nav{position:absolute;z-index:100;margin-top:-32px;top:50%;opacity:1}#fullPage-nav li{display:block;width:14px;height:13px;margin:7px}#fullPage-nav li a{display:block;position:relative;z-index:1;width:100%;height:100%;cursor:pointer}#fullPage-nav li .active span{background:#333}#fullPage-nav span{top:2px;left:2px;width:8px;height:8px;border:1px solid #000;background:rgba(0,0,0,0);-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;position:absolute;z-index:1}.button{margin:20px 15px 0 0;vertical-align:middle;display:inline-block}.button a{color:#fff;background:#316f68;padding:15px 30px;border-radius:5px;display:block}.button a:hover{color:#316f68;background-color:#fff}#infoMenu{height:20px;bottom:0;width:100%;text-align:right;font-size:.9em;padding:8px 0}#infoMenu li a{display:block;margin:0 22px 0 0;color:#333}#infoMenu li a:hover{text-decoration:underline}#infoMenu li{display:inline-block;position:relative}#examplesList{display:none;background:#282828;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;padding:20px;float:left;position:absolute;bottom:29px;right:0;width:822px}#examplesList ul li{display:block;margin:5px 0}#examplesList ul li a{color:#BDBDBD;margin:0}#examplesList .column{float:left;margin:0 20px 0 0}#examplesList h3{color:#f2f2f2;font-size:1.2em;margin:0 0 15px;border-bottom:1px solid rgba(0,0,0,.4);-webkit-box-shadow:0 1px 0 rgba(255,255,255,.1);-moz-box-shadow:0 1px 0 rgba(255,255,255,.1);box-shadow:0 1px 0 rgba(255,255,255,.1);padding:0 0 5px}#harlem {color:#fff;font-size:150%}#supportedBy{position:absolute;left:30px;bottom:30px;z-index:101}#supportedBy a img{display:block;margin:0;border:0}#supportedBy div{margin:0 0 4px;display:block;font-size:13px;text-align:left}#section0 #logo{max-width:282px}#y-theme{position:fixed;bottom:40px;right:20px}@media screen and (max-width:990px){#y-theme{display:none}}@media screen and (max-height:770px){#section0 #logo{max-width:250px!important;height:auto!important}#section0 #usedBy{padding:10px 0 0;height:60px;width:398px;margin-top:40px;background-size:cover}#section3 img{bottom:-67px}}@media screen and (max-height:680px){#section0 #usedBy{margin-top:15px;height:41px;width:308px;background-size:cover}#section0 #logo{max-width:200px!important;height:auto!important}#section3 img{bottom:-100px}}@media screen and (max-height:580px){#section0 #logo{max-width:150px!important;height:auto!important}h1{font-size:4.5em}h2{font-size:1.3em}#harlem {font-size:57%}#section3 img{bottom:-180px}.intro p{font-size:1.1em}}@media screen and (max-height:480px){#logo,#usedBy{display:none}}@media all and (max-width:900px){#usedBy{padding:0}}@media all and (max-width:890px){#twitter-widget-0{left:20px;top:63px}#section3 img{margin:0 auto;left:0;max-width:600px;height:auto!important;right:0}#section1 #slidersImg{max-width:462px;height:auto!important}#menu li{margin:5px}#menu li a,#menu li.active a{padding:9px 12px}}@media all and (max-width:650px){#menu{z-index:9999}#menu li{margin:3px}#menu li a,#menu li.active a{padding:9px 12px}#section3 img{margin:0 auto;left:0;max-width:450px;height:auto!important;right:0}#section2 img{margin:20px 0 0}.intro p{font-size:1.1em}#usedBy{width:310px!important;height:46px!important;background-size:cover!important;background-repeat:no-repeat}}@media all and (max-width:580px){#menu li a,#menu li.active a{padding:8px 11px;font-size:13px}#supportedBy{display:none}#section1 #slidersImg,#section2 #easyToUse{max-width:350px;height:auto!important}.intro p{width:75%}h1{font-size:2.7em}h2{font-size:1.1em}#infoMenu{text-align:center}#infoMenu ul{display:inline-block;padding:0}#infoMenu li a{margin:0 10px 0 0}}@media all and (max-width:480px){#section3 img{margin:0 auto;left:0;max-width:300px;height:auto!important;right:0}#twitter-widget-0{display:none}}@media all and (max-width:450px){#menu{display:none}.intro p{font-size:1em}#infoMenu{bottom:21px}}@media screen and (max-width:890px) and (max-height:680px){#section3 img{bottom:-50px}}@media screen and (max-width:650px) and (max-height:680px){#section3 img{bottom:0}}@media screen and (max-width:580px) and (max-height:580px){#section3 img{bottom:-50px}}@media screen and (max-width:500px) and (max-height:500px){#section3 img{bottom:0}}.history{float:left; margin-top: 100px; background-color: #402060; border-radius: 10px}h2{font-family: 'Poiret One', 'sans-serif'}#section0{background-image: url("http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/images/Harlem_Renaissance_edited.png");width:100%}
+    .intro h1 {text-align: center}
+  </style>
   <body>
+
+
+<ul id="menu">
+    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Background</a></li>
+    <li data-menuanchor="secondPage"><a href="#secondPage">Culture</a></li>
+    <!--<li data-menuanchor="3rdPage"><a href="#3rdPage">Third section</a></li>
+    <li data-menuanchor="4thpage"><a href="#4thpage">Fourth section</a></li>-->
+</ul>
+
+<div id="fullpage">
+
+    <div class="section active" id="section0">
+        <h2>The</h2>
+        <h1>Harlem Renaissance <br> Era </h1>
+      <div class = "history">
+
+        <p id="harlem">
+            During the early 20th century, African-American poets, musicians, actors, artists <br> and intellectuals moved to Harlem
+              in New York City and brought new ideas that <br> shifted the culture forever. From approximately 1918 to the mid 1930s,
+              talent began <br> to overflow within this newfound culture of the black community in Harlem, <br> as prominent figures—Langston
+              Hughes, Duke Ellington and Billie Holiday, <br>to name a few—pushed art to its limit as a form of expression and
+              representation. <br> These are some of the famous African Americans who shaped the influential movement <br> known as
+              the Harlem Renaissance.
+        </p>
+      </div>
+      <!--<h3 id="quiz">
+        Test Your Knowledge
+      </h3>-->
+
+    </div>
+    <div class="section" id="section1">
+        <div class="slide active">
+            <div class="intro">
+                <h1>Artists</h1>
+                <!--<p>Not only vertical scrolling but also horizontal scrolling. With fullPage.js you will be able to add horizontal sliders in the most simple way ever.</p>-->
+
+            </div>
+
+        </div>
+        <div class="slide">
+            <div class="intro">
+
+                <h1>Musicians</h1>
+                <!--<p>Easy to use. Configurable and customizable.</p>-->
+            </div>
+        </div>
+        <div class="slide">
+            <div class="intro">
+
+                <h1>Writers</h1>
+                <img src = "https://s-media-cache-ak0.pinimg.com/originals/48/57/93/485793d690618759e8cb268df58f32f3.jpg">
+                <div id="magazine">
+                	<div style="background-image:url(pages/01.jpg);"></div>
+                	<div style="background-image:url(pages/02.jpg);"></div>
+                	<div style="background-image:url(pages/03.jpg);"></div>
+                	<div style="background-image:url(pages/04.jpg);"></div>
+                	<div style="background-image:url(pages/05.jpg);"></div>
+                	<div style="background-image:url(pages/06.jpg);"></div>
+                </div>
+        </div>
+    </div>
+
+</div>
+
+<!--
+<div id="y-theme">
+    <a href="http://alvarotrigo.com/fullPage/utils/wordpress-y-theme.html"><img src="imgs/wodpress-y-theme-fullpage3.png" /></a>
+</div>
+-->
+
+
+
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills float-right">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-        <h3 class="text-muted">GitHub</h3>
-      </div>
+    <!--deleted class="text-muted"-->
 
-      <div class="jumbotron">
+  <!--<h3>The</h3><br>
+  <h1>Harlem Renaissance</h1><br>
+  <h1>Era</h1>
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Home</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#">About</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#">Contact</a>
+    </li>
+  </ul>
+
+    <div class="container">
+      <!--<div class="header">
+
+      </div>-->
+
+      <!--<div class="jumbotron">
         <h1 class="display-3">'Allo, 'Allo!</h1>
         <p class="lead">Always a pleasure scaffolding your apps.</p>
         <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-      </div>
+      </div>-->
+      <!--<div class="row marketing">
+        <div class="col-lg-9">
+          <button type="button" class="btn btn-default" id = "next">Next</button>
+          <span class="glyphicon glyphicon-tags" aria-hidden="true"></span>
+          <!--<h4>HTML5 Boilerplate</h4>-->
+          <!--<p id = "history">During the early 20th century, African-American poets, musicians, actors, artists and intellectuals moved to Harlem
+            in New York City and brought new ideas that shifted the culture forever. From approximately 1918 to the mid 1930s,
+            talent began to overflow within this newfound culture of the black community in Harlem, as prominent figures—Langston
+            Hughes, Duke Ellington and Billie Holiday, to name a few—pushed art to its limit as a form of expression and
+            representation. These are some of the famous African Americans who shaped the influential movement known as
+            the Harlem Renaissance.</p>
+            <p id = "history2">Florence Mills was born Florence Winfrey on January 25, 1896 (some accounts say 1895),
+              in the Washington, D.C., area. She became an entertainer as a young child, billed as "Baby Florence"
+              and captivating audiences with song and dance. She worked in vaudeville and joined a touring company
+              at eight years old before authorities found out she was underage. Her family eventually moved to Harlem, New York,
+              and in 1910 Mills would form another vaudeville act—the Mills Sisters—with her siblings Olivia and Maude.
+              Mills would later meet and wed Ulysses S. Thompson, from the troupe the Tennessee Ten, in 1923.</p>
+          <h5 id = "question">Test your knowledge</h5>
+          <p id = "question">Who wrote <i>Songs of Jamaica</i> and <i>Constab Ballads</i> in 1912?</p>
+            <form action="#">
+                <div class="input-group">
+                   <input type = "text" class = "btn btn" name = "answer" id="answer" placeholder="Answer">
+                   <input type = "submit" class = "btn btn-danger" id = "submit" name = "submit" value = "Enter">
+                </div>
+            </form>
 
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
 
-          <h4>Sass</h4>
+          <!--<h4>Sass</h4>
           <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
 
           <h4>Bootstrap</h4>
@@ -63,13 +172,61 @@
           <h4>Modernizr</h4>
           <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
         </div>
-      </div>
+      </div>--->
 
-      <div class="footer">
+
+      <!--<div class="footer">
         <p>♥ from the Yeoman team</p>
       </div>
-    </div>
-    
+    </div>-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("#next").click(function(){
+          $("#history").slideUp();
+          $("#history2").fadeIn();
+      });
+  });
+</script>-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+<!--<script type="text/javascript" src="fullpage.js"></script>-->
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+            sectionsColor: ['#452b74', '#ffc000', '#ffd500', 'whitesmoke', '#000080'],
+            anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+            menu: '#menu',
+            css3: true,
+            scrollingSpeed: 1000
+        });
+
+        $('#showExamples').click(function(e){
+            e.stopPropagation();
+            e.preventDefault();
+            $('#examplesList').toggle();
+        });
+
+        $('html').click(function(){
+            $('#examplesList').hide();
+        });
+    });
+    /*$(document).ready(function(e){
+  $('.cntl').cntl({
+    revealbefore: 300,
+    anim_class: 'cntl-animate',
+    onreveal: function(e){
+      console.log(e);
+    }
+  });
+});*/
+
+
+</script>
+<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -85,9 +242,10 @@
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/tether/dist/js/tether.js"></script>
     <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/fullpage.js/dist/jquery.fullpage.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-    
+
     <!-- build:js scripts/plugins.js -->
     <script src="/bower_components/bootstrap/js/dist/util.js"></script>
     <script src="/bower_components/bootstrap/js/dist/alert.js"></script>
@@ -101,9 +259,10 @@
     <script src="/bower_components/bootstrap/js/dist/tooltip.js"></script>
     <script src="/bower_components/bootstrap/js/dist/popover.js"></script>
     <!-- endbuild -->
-    
+
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
+
   </body>
 </html>
