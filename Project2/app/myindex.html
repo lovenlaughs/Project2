@@ -22,6 +22,7 @@
 <link rel="stylesheet" href="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/styles/animations.css" />
 <link rel="stylesheet" href="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/styles/styles.css" />
 
+<link href="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/styles/timeline.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
@@ -29,8 +30,8 @@
 <ul id="menu">
     <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Background</a></li>
     <li data-menuanchor="secondPage"><a href="#secondPage">Culture</a></li>
-    <!--<li data-menuanchor="3rdPage"><a href="#3rdPage">Third section</a></li>
-    <li data-menuanchor="4thpage"><a href="#4thpage">Fourth section</a></li>-->
+    <li data-menuanchor="3rdPage"><a href="#3rdPage">Timeline</a></li>
+    <!--<li data-menuanchor="4thpage"><a href="#4thpage">Fourth section</a></li>-->
 </ul>
 
 <div id="fullpage">
@@ -398,7 +399,50 @@
 			</div>
 		</div>
 	</div>
-
+	<div class = "section" id = "section2" style="background:url(http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/images/band_blurred.jpg);">
+	<h1 style="margin-top:-50px;">Fun Facts</h1>
+	<div class="timeline-container timeline-theme-demo">
+              <div class="timeline timeline-small-box timeline-demo" style="background-color:#800040;">
+                <div class="theme-1" data-time="1910" style="color:white;">1910
+				<br>
+				<img src ="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/NAACP_leaders_with_poster_NYWTS.jpg/220px-NAACP_leaders_with_poster_NYWTS.jpg">
+					<p>The National Association for the Advancement of Colored People (NAACP) is founded, and W.E.B. du Bois becomes editor of their monthly magazine, Crisis</p>
+				</div>
+                <div class="theme-2" data-time="1912" style="color:white;">1912
+				<br>
+				<img src = "http://img.tfd.com/WEAL/weal_06_img1083.jpg">
+					<p>James Weldon Johnson’s novel Autobiography of an Ex-Colored Man is published</p>
+				</div>
+                <div class="theme-3" data-time="1917" style="color:white;">1917
+				<br>
+				<img src = "http://www.ndolofilms.com/denis/berlin2002/garvey.jpg">
+					<p>Marcus Garvey, born in Jamaica, arrives in Harlem and founds the United Negro Improvement Association (UNIA)</p>
+				</div>
+                <div class="theme-4" data-time="1921" style="color:white;">1921
+				<br>
+				<img src = "https://upload.wikimedia.org/wikipedia/en/2/2c/Black_Swan_Records_Logo.gif">
+					<p> The Black Swan Phonograph Corporation is founded by Harry Pace; they produce “race records” which helped bring jazz to a larger audience, especially recordings of Mamie and Bessie Smith</p>
+				</div>
+                <div class="theme-5" data-time="1922" style="color:white;">1922
+				<br>
+				<img src = "http://www.medalartists.com/uploads/3/5/5/0/3550356/6226581_orig.jpg" width=200 height=225>
+					<p> The Harmon Foundation is established to promote black fine artists</p>
+				</div>
+               
+              </div>
+            </div>
+	<div class="timeline-dots-wrap bottom">
+	<ul class="timeline-dots" style="width: 500px; transform: translate3d(400px, 0px, 0px);">
+		<li class="slide-active">
+			<button type="button" role="button">1</button>
+		</li>
+	<li class="slide-next">
+		<button type="button" role="button">2</button>
+	</li><li><button type="button" role="button">3</button>
+	</li><li><button type="button" role="button">4</button>
+	</li><li><button type="button" role="button">5</button>
+	</ul></div>
+	</div>
 </div>
 <!--
 <div id="y-theme">
@@ -410,7 +454,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script type="text/javascript" src="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/bower_components/fullpage.js/dist/jquery.fullpage.js"></script>
 <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
+<script src="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/scripts/timeline.js"></script> 
 
 <script type="text/javascript">
     $(document).ready(function() {
@@ -448,6 +492,8 @@ $(document).ready(function() {
 	
 	var audio = new Audio('http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/music/Go%20Harlem%20-%20Chick%20Webb%20(1).mp3');
 	audio.play();
+	
+	$('.timeline-demo').Timeline();
 	
 	// Get the modal
 var modal = document.getElementById('myModal');
