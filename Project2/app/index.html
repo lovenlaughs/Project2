@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="lib/cntl.css">
+    <script type="text/javascript" src="bower_components/turn.js/turn.min.js"></script>
     <title>GitHub</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -18,6 +19,7 @@
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="/bower_components/fullpage.js/dist/jquery.fullpage.css" />
+    <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -47,7 +49,7 @@
 
     <div class="section active" id="section0">
         <h2>The</h2>
-        <h1>Harlem Renaissance <br> Era </h1>
+        <h1 class = "animated zoomInDown">Harlem Renaissance <br> Era </h1>
       <div class = "history">
 
         <p id="harlem">
@@ -84,15 +86,7 @@
             <div class="intro">
 
                 <h1>Writers</h1>
-                <img src = "https://s-media-cache-ak0.pinimg.com/originals/48/57/93/485793d690618759e8cb268df58f32f3.jpg">
-                <div id="magazine">
-                	<div style="background-image:url(pages/01.jpg);"></div>
-                	<div style="background-image:url(pages/02.jpg);"></div>
-                	<div style="background-image:url(pages/03.jpg);"></div>
-                	<div style="background-image:url(pages/04.jpg);"></div>
-                	<div style="background-image:url(pages/05.jpg);"></div>
-                	<div style="background-image:url(pages/06.jpg);"></div>
-                </div>
+
         </div>
     </div>
 
@@ -223,6 +217,11 @@
   });
 });*/
 
+$("#flipbook").turn({
+    width: 400,
+    height: 300,
+    autoCenter: true
+});
 
 </script>
 <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>

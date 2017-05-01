@@ -13,6 +13,11 @@
 body {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  background-color: #34ADFF;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  min-height: 400px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -35,6 +40,66 @@ body {
   margin-bottom: 0;
   line-height: 3rem;
 }
+
+h1, h3 {
+  margin-left: 100px;
+  margin-top: 50px;
+  font-family: 'Poiret One', cursive;
+  color: #f9f9f9;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+
+/*@font-face {
+    font-family: 'rieslingregular';
+    src: url('riesling-webfont.woff2') format('woff2'),
+         url('riesling-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}*/
+
+ul.nav li {
+  margin-top: 100px;
+  margin-left: 90px;
+}
+
+ul.nav li a {
+  color: #f9f9f9;
+  font-family: 'Roboto', sans-serif;
+}
+
+.col-lg-9 {
+  margin-left: 600px;
+}
+
+#next {
+  margin-top: -200px;
+  float: right;
+}
+
+#history {
+  margin-top: -100px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#history2 {
+  display: none;
+  margin-top: -100px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#question {
+  font-weight: bold;
+}
+
 
 /* Custom page footer */
 .footer {

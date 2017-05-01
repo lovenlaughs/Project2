@@ -1,0 +1,156 @@
+// bower:scss
+@import "bower_components/bootstrap/scss/bootstrap.scss";
+// endbower
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: #34ADFF;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  min-height: 400px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+/* Custom page header */
+.header {
+  padding-bottom: 1rem;
+  border-bottom: .05rem solid #e5e5e5;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 3rem;
+}
+
+h1, h3 {
+  margin-left: 100px;
+  margin-top: 50px;
+  font-family: 'Poiret One', cursive;
+  color: #f9f9f9;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+
+/*@font-face {
+    font-family: 'rieslingregular';
+    src: url('riesling-webfont.woff2') format('woff2'),
+         url('riesling-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}*/
+
+ul.nav li {
+  margin-top: 100px;
+  margin-left: 90px;
+}
+
+ul.nav li a {
+  color: #f9f9f9;
+  font-family: 'Roboto', sans-serif;
+}
+
+.col-lg-9 {
+  margin-left: 600px;
+}
+
+#next {
+  margin-top: -200px;
+  float: right;
+}
+
+#history {
+  margin-top: -100px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#history2 {
+  display: none;
+  margin-top: -100px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#question {
+  font-weight: bold;
+}
+
+
+/* Custom page footer */
+.footer {
+  padding-top: 1.5rem;
+  color: #777;
+  border-top: .05rem solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 48em) {
+  .container {
+    max-width: 46rem;
+  }
+}
+.container-narrow > hr {
+  margin: 2rem 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: .05rem solid #e5e5e5;
+}
+.jumbotron .btn {
+  padding: .75rem 1.5rem;
+  font-size: 1.5rem;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 3rem 0;
+}
+.marketing p + h4 {
+  margin-top: 1.5rem;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 48em) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 2rem;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}

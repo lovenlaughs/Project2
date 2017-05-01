@@ -1,0 +1,664 @@
+  
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  
+    <link rel="stylesheet" type="text/css" href="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/bower_components/fullpage.js/dist/jquery.fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js'></script>
+
+	
+	<script type="text/javascript" src="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/bower_components/turn.js/turnjs4/extras/jquery.min.1.7.js"></script>
+<script type="text/javascript" src="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/bower_components/turn.js/turnjs4/extras/jquery-ui-1.8.20.custom.min.js"></script>
+<script type="text/javascript" src="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/bower_components/turn.js/turnjs4/extras/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/bower_components/turn.js/turnjs4/extras/modernizr.2.5.3.min.js"></script>
+<script type="text/javascript" src="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/bower_components/turn.js/turnjs4/lib/hash.js"></script>
+
+ <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" href="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/bower_components/animate.css/animate.css" />
+<link rel="stylesheet" href="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/styles/animations.css" />
+<link rel="stylesheet" href="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/styles/styles.css" />
+
+</head>
+<body>
+
+
+<ul id="menu">
+    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Background</a></li>
+    <li data-menuanchor="secondPage"><a href="#secondPage">Culture</a></li>
+    <!--<li data-menuanchor="3rdPage"><a href="#3rdPage">Third section</a></li>
+    <li data-menuanchor="4thpage"><a href="#4thpage">Fourth section</a></li>-->
+</ul>
+
+<div id="fullpage">
+   <div class="section active" id="section0">
+   <div id = "instrument" class = "animated slideOutRight">
+		<img class = "tossing" src = "http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/images/yellow_trumpet.png" alt = "trumpet" id = "trumpet">
+   </div>
+	<div id = "words" class = "animated slideOutRight">
+		<p id = "jazz" class = "animated bounceIn"> Jazz. Soul. Vibes. </p>
+		<p id = "jazz2" class = "animated bounceIn"> Let's take a moment to go back in time </p>
+	</div>
+	<section class = "content">
+        <h2 id = "animate" class = "animated fadeInRight">The</h2>
+        <h1 id = "animate" class = "animated fadeInRight">Harlem Renaissance <br> Era </h1>
+      <div class = "history">
+
+        <p id="harlem" class = "animated fadeInRight">
+            During the early 20th century, African-American poets, musicians, actors, artists <br> and intellectuals moved to Harlem
+              in New York City and brought new ideas that <br> shifted the culture forever. From approximately 1918 to the mid 1930s,
+              talent began <br> to overflow within this newfound culture of the black community in Harlem, <br> as prominent figures—Langston
+              Hughes, Duke Ellington and Billie Holiday, <br>to name a few—pushed art to its limit as a form of expression and
+              representation. <br> These are some of the famous African Americans who shaped the influential movement <br> known as
+              the Harlem Renaissance.
+        </p>
+      </div>
+	</section>
+	<section id = "knowledge" class = "animated fadeInRight">
+      <h3 id="quiz">
+        Test Your Knowledge
+      </h3>
+	  <br>
+	  <br>
+	  <br>
+	  <p id = "writer">Who wrote "If We Must Die" and "Harlem Shadows"?</p>
+	  <!--<form action="" method="post" id="form">
+		<input type = "text" class="form-control" name="answer1" id="answer1">
+		<input type = "submit" name = "submit" class="btn btn-default" value = "Enter">
+	</form>	
+	<!-- Trigger/Open The Modal -->
+<input type = "submit" name = "submit" class="btn btn-default" value = "Find out!" id="myBtn">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Mackey.jpg/220px-Mackey.jpg">
+	<h3 id = "McKay">Claude McKay</h2>
+	<p id = "knowledge">Claude McKay was born in Sunny Ville, Clarendon Parish, Jamaica, on September 15, 1889. 
+	McKay moved to Harlem, New York, after publishing his first books of poetry, 
+	and established himself as a literary voice for social justice during the Harlem Renaissance. 
+	He is known for his novels, essays and poems, including "If We Must Die" and "Harlem Shadows." 
+	He died on May 22, 1948, in Chicago, Illinois.</p>
+  </div>
+
+</div>
+	<?php include 'connect.php'; ?>
+</section>
+		
+    </div>
+    <div class="section" id="section1">
+        <div class="slide active">
+            <div class="intro">
+<div class="row">
+  <div class="col-6 col-sm-3">
+<div id="flip-container" ontouchstart="this.classList.toggle('hover');">
+	<div class="flipper">
+		<div class="front" style="background: url(https://s-media-cache-ak0.pinimg.com/originals/ea/ca/f6/eacaf6ff5ac09a007e1f4b5f99abca7c.jpg) 0 0 no-repeat;">
+		</div>
+		<div class="back"  style="background:#800040;">
+			<div class="back-logo"></div>
+			<h3 style = "font-size: 36px; font-family: 'Poiret One', sans-serif;">Aaron Douglas<h3>
+			<br>
+				<p id = "biography">Born in Topeka, Kansas, Aaron Douglas was a leading figure in the artistic
+				and literary movement known as the Harlem Renaissance. He is sometimes referred 
+				to as "the father of black American art." Douglas developed an interest in art early on, 
+				finding some of his inspiration from his mother's love for painting watercolors.</p>
+				<br>
+				<p id = "biography">He contributed illustrations the National Urban League's magazine, 
+				and to The Crisis, put out by the National Association for the Advancement Colored People. 
+				Douglas created powerful images of African-American life and struggles, and won awards 
+				for the work he created for these publications, ultimately receiving a commission to 
+				illustrate an anthology of philosopher Alain LeRoy Locke's work, entitled The New Negro.</p>
+		</div>
+	</div>
+</div>
+</div>
+<div class="col-6 col-sm-3">
+<div id="flip-container" ontouchstart="this.classList.toggle('hover');">
+	<div class="flipper">
+		<div class="front" style="background: url(http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/images/lois_%20jones.jpg) 0 0 no-repeat;">
+		</div>
+		<div class="back"  style="background:#800040;">
+			<div class="back-logo"></div>
+				<h3 style = "font-size: 36px; font-family: 'Poiret One', sans-serif;">Lois Mailou Jones<h3>
+			<br>
+				<p id = "biography">In the 1930s, Lois Mailou Jones' art reflected the influences of African
+				traditions, and she designed African-style masks and in 1938 painted Les Fétiches, 
+				which depicts masks in five distinct, ethnic styles. During a year in Paris, 
+				she produced landscapes and figure studies, and African influences reemerged in her art 
+				in the late 1960s and early 1970s, particularly after two tours of Africa.</p>
+				<br>
+				<p id = "biography">In 1953 Jones married the artist Louis Vergniaud Pierre-Noël of Haiti, 
+				and she came to know many of that nation’s artists. From this time she painted portraits 
+				and landscapes in brighter colours and with a more expressionistic style than she had previously 
+				employed. Her paintings became bold and abstract, and African design elements began to dominate.</p>
+		</div>
+	</div>
+</div>
+</div>
+<div class="col-6 col-sm-3">
+<div id="flip-container" ontouchstart="this.classList.toggle('hover');">
+	<div class="flipper">
+		<div class="front" style="background: url(http://www.ivy-style.com/wp-content/uploads/2011/02/photo.jpeg) 0 0 no-repeat;">
+		</div>
+		<div class="back"  style="background:#800040;">
+			<div class="back-logo"></div>
+				<h3 style = "font-size: 36px; font-family: 'Poiret One', sans-serif;">Jacob Lawrence<h3>
+			<br>
+				<p id = "biography">Lawrence was introduced to art shortly after his arrival in Harlem, when his mother 
+				enrolled him in Utopia Children’s Center, which had an after-school art program. 
+				He dropped out of school at 16 but took classes at the Harlem Art Workshop with Charles 
+				Alston and frequently visited the Metropolitan Museum of Art.</p>
+				<br>
+				<p id = "biography">In 1937, Lawrence won a scholarship to the American Artists School 
+				in New York. When he graduated in 1939, he received funding from the Works Progress 
+				Administration Federal Art Project. He completed his best-known series, Migration of the Negro or simply The Migration Series, 
+				in 1941. The series was exhibited at Edith Halpert's Downtown Gallery in 1942, making Lawrence 
+				the first African-American to join the gallery.</p>
+		</div>
+	</div>
+</div>
+</div>
+<div class="col-6 col-sm-3">
+<div id="flip-container" ontouchstart="this.classList.toggle('hover');">
+	<div class="flipper">
+		<div class="front" style="background: url(http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/images/georgette_seabrooke.jpg) 0 0 no-repeat;">
+		</div>
+		<div class="back"  style="background:#800040;">
+			<div class="back-logo"></div>
+				<h3 style = "font-size: 36px; font-family: 'Poiret One', sans-serif;">Georgette Seabrooke<h3>
+				<br>
+				<p id = "biography">Georgette E. Seabrooke Powell was born on August 2, 1916 in 
+				Charleston, South Carolina, and grew up in the Yorkville neighborhood of New York City.  
+				She graduated from Washington Irving High School, the prestigious Cooper Union for the 
+				Advancement of Science and Art, both in New York City, receiving the silver medal for painting. 
+				At age 57, she earned her Bachelor‘s of Fine Arts degree from Howard University, 
+				School of Fine Arts in Washington, D.C.</p>
+				<br>
+				<p id = "biography">As a teenager, Ms. Powell studied with two great artists, 
+				James L. Wells, at the Harlem Art Workshop and Gwendolyn B. Bennett, at Harlem 
+				Community Center. She also studied with several Harlem Renaissance Artists such as 
+				Augusta Savage, Romare Bearden, Charles Alston and Jacob Lawrence.</p>
+
+		</div>
+	</div>
+</div>
+</div>
+<div class="col-6 col-sm-3">
+<div id="flip-container" ontouchstart="this.classList.toggle('hover');">
+	<div class="flipper">
+		<div class="front" style="background: url(http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/images/augusta_savage.jpg) 0 0 no-repeat;">
+		</div>
+		<div class="back"  style="background:#800040;">
+			<div class="back-logo"></div>
+				<h3 style = "font-size: 36px; font-family: 'Poiret One', sans-serif;">Augusta Savage<h3>
+				<br>
+				<p id = "biography"> In 1923, Savage applied to a special summer program to study art in France, 
+				but was rejected because of her race. She took the rejection as a call to action, 
+				and sent letters to the local media about the program selection committee's 
+				discriminatory practices. Savage's story made headlines in many newspapers, although 
+				it wasn't enough to change the group's decision. One committee member, Herman MacNeil, 
+				regretted the ruling and invited Savage to further hone her craft at his Long Island studio.</p>
+				<br>
+				<p id = "biography">Savage soon started to make a name for herself as a portrait sculptor. 
+				Her works from this time include busts of such prominent African Americans as W. E. B. 
+				Du Bois and Marcus Garvey. Savage was considered to be one of the leading artists of the 
+				Harlem Renaissance.</p>
+		</div>
+	</div>
+</div>
+</div>
+<div class="col-6 col-sm-3">
+<div id="flip-container" ontouchstart="this.classList.toggle('hover');">
+	<div class="flipper">
+		<div class="front" style="background: url(http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/images/palmer_hayden.jpg) 0 0 no-repeat;">
+		</div>
+		<div class="back"  style="background:#800040;">
+			<div class="back-logo"></div>
+				<h3 style = "font-size: 36px; font-family: 'Poiret One', sans-serif;">Palmer Hayden<h3>
+				<br>
+				<p id = "biography">By 1940 Palmer Hayden was known for his narrative scenes of New York’s
+				urban life and the rural South. Like a photographer taking snapshots, he depicted black 
+				subjects during unguarded moments in their daily routine. His characterizations-sometimes 
+				humorous, sometimes unflattering-are nonetheless caring and proud. Described by Hayden’s 
+				compelling use of line, they possess the immediacy of popular illustrations.</p>
+				<br>
+				<p id = "biography">By 1940 Palmer Hayden was known for his narrative scenes of New York’s 
+				urban life and the rural South. Like a photographer taking snapshots, he depicted black subjects 
+				during unguarded moments in their daily routine. His characterizations-sometimes humorous, 
+				sometimes unflattering-are nonetheless caring and proud.</p>
+		</div>
+	</div>
+</div>
+</div>
+<div class="col-6 col-sm-3">
+<div id="flip-container" ontouchstart="this.classList.toggle('hover');">
+	<div class="flipper">
+		<div class="front" style="background: url(http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/images/gwendolyn_bennett.jpg) 0 0 no-repeat;">
+		</div>
+		<div class="back"  style="background:#800040;">
+			<div class="back-logo"></div>
+				<h3 style = "font-size: 36px; font-family: 'Poiret One', sans-serif;">Gwendolyn Bennett<h3>
+				<br>
+				<p id = "biography">With a passion for the creative arts, Bennett became the first 
+				African-American member of her school's theater and literature student organizations. 
+				She attended Columbia University's Teacher College, though she transferred to Pratt Institute, 
+				graduating in 1924. She joined the faculty at Howard University for a time before receiving 
+				funding to travel to Paris, taking course work at the Sorbonne and Julian Academy.</p>
+				<br>
+				<p id = "biography">Bennett had become a noted figure of the Harlem Renaissance, 
+				with her poetry published in the NAACP's The Crisis magazine and Alaine Locke's New Negro,
+				and her artwork gracing the covers of The Crisis and Opportunity: Journal of Negro Life.</p>
+		</div>
+	</div>
+</div>
+</div>
+<div class="col-6 col-sm-3">
+<div id="flip-container" ontouchstart="this.classList.toggle('hover');">
+	<div class="flipper">
+		<div class="front" style="background: url(http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/images/eldzier_cortor.jpg) 0 0 no-repeat;">
+		</div>
+		<div class="back"  style="background:#800040;">
+			<div class="back-logo"></div>
+				<h3 style = "font-size: 36px; font-family: 'Poiret One', sans-serif;">Eldzier Cortor<h3>
+				<br>
+				<p id = "biography">Eldzier Cortor was a painter and printmaker perhaps best known for 
+				his elegant paintings of nude black women created when such works were seldom seen 
+				in the mainstream art world. As a young man, Mr. Cortor studied at the Art Institute 
+				of Chicago and was employed by the Works Progress Administration’s Federal Art Project, 
+				created in 1935 as part of the New Deal to support artists.</p>
+				<br>
+				<p id = "biography">Mr. Cortor’s works are in major museum collections, 
+				including those of the Art Institute of Chicago and the Smithsonian American Art Museum. 
+				His work was also featured in the inaugural show at the new Whitney Museum 
+				of American Art, “America Is Hard to See.”</p>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+
+				
+            </div>
+
+        </div>
+        <div class="slide" id = "slide2">
+            <div class="intro">
+                
+                <h3>Writers</h3>
+				
+				<!-- The Modal -->
+<div id="thisModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+				<div class="flipbook-viewport">
+	<div class="container">
+		<div class="flipbook">
+			<div style="background-image:url(http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/images/harlem_magazine.jpg)"></div>
+			<div style="background-image:url(http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/images/2.png)"></div>
+			<div style="background-image:url(http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/images/3.png)"></div>
+			<div style="background-image:url(http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/images/4.png)"></div>
+			<div style="background-image:url(http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/images/5.png)"></div>
+			<div style="background-image:url(http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/images/6.png)"></div>
+			<div style="background-image:url(http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/images/7.png)"></div>
+			<div style="background-image:url(http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/images/8.png)"></div>
+			<div style="background-image:url(http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/images/9.png)"></div>
+			<div style="background-image:url(http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/images/10.png)"></div>
+		</div>
+	</div>
+</div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="intro">
+             
+<div class="wrap">
+	<div class="player">
+		<audio class="audio-player" src=""></audio>
+		<div class="cover"></div>
+		<div class="controls">
+			<button class="prev">
+				<span class="glyphicon glyphicon-backward" aria-hidden="true"></span>
+			</button>
+			<button class="play">
+				<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+			</button>
+			<button class="pause">
+				<span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+			</button>
+			<button class="stop">
+				<span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+			</button>
+			<button class="next">
+				<span class="glyphicon glyphicon-forward" aria-hidden="true"></span>
+			</button>
+		</div>
+		<div class="timer">00:00</div>
+		<div class="volume">
+			<button class="volume-down">
+				<i class="fa fa-volume-down"></i>
+			</button>
+			<button class="volume-up">
+				<i class="fa fa-volume-up"></i>
+			</button>
+		</div>
+		<progress class="progress" value="0" min="0" max="100" step="1"></progress>
+	</div>
+	<div class="track-list">
+		<ul>
+			<li class="track-info active" data-url="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/music/Louis%20Armstrong%20-%20What%20A%20Wonderful%20World%20(Lyrics).mp3" data-cover="http://www.spclarke.com/wp-content/uploads/2011/11/Louis-Armstrong.jpg">
+				<span class="title">Louis Armstrong</span>
+				<span class="time"></span>
+			</li>
+			<li class="track-info" data-url="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/music/It%20Don't%20Mean%20A%20Thing%20(If%20It%20Ain't%20Got%20That%20Swing)%20-%20Duke%20Ellington%20&%20His%20Famous%20Orchestra%20(1932.mp3" data-cover="https://s3-us-west-2.amazonaws.com/find-a-grave-prod/photos/2009/304/318_125706311135.jpg">
+				<span class="title">Duke Ellington</span>
+				<span class="time"></span>
+			</li>
+			<li class="track-info" data-url="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/music/Billie%20Holiday%20-%20Summertime.mp3" data-cover="http://www.billieholidaysongs.com/wp-content/uploads/2012/12/billieholiday.jpg?w=252&h=300">
+				<span class="title">Billie Holiday</span>
+				<span class="time"></span>
+			</li>
+			<li class="track-info" data-url="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/music/Wild%20Man%20BluesHenry%20Red%20Allen.mp3" data-cover="https://www.allaboutjazz.com/media/large/0/7/d/333ef04e24546e3dc9d117af0a4f9.jpg">
+				<span class="title">Henry Allen</span>
+				<span class="time"></span>
+			</li>
+		</ul>
+		<p id = "bio"><b>Louis Armstrong</b>, nicknamed "Satchmo," "Pops" and, later, "Ambassador Satch," was born on August 4, 1901, in New Orleans, Louisiana. 
+				An all-star virtuoso, he came to prominence in the 1920s, influencing countless musicians with both his daring trumpet style 
+				and unique vocals. Armstrong's charismatic stage presence impressed not only the jazz world but all of popular music. 
+				He recorded several songs throughout his career, including he is known for songs like "Star Dust," "La Vie En Rose" and 
+				"What a Wonderful World." Armstrong died at his home in Queens, New York, on July 6, 1971.</p>
+		<br>
+		<p id = "bio">In the 1920s, <b>Duke Ellington</b> performed in Broadway nightclubs as the bandleader of a sextet, 
+		a group which in time grew to a 10-piece ensemble. Ellington sought out musicians with unique playing styles, 
+		such as Bubber Miley, who used a plunger to make the "wa-wa" sound, and Joe Nanton, who gave the world his trombone "growl." 
+		At various times, his ensemble included the trumpeter Cootie Williams, cornetist Rex Stewart and alto saxophonist Johnny Hodges. 
+		Ellington made hundreds of recordings with his bands, appeared in films and on radio, and toured Europe on two occasions in the 1930s.</p>
+		<br>
+		<p id = "bio">Jazz vocalist <b>Billie Holiday</b> was born April 7, 1915, in Philadelphia, Pennsylvania. Considered one of the best jazz
+		vocalists of all time, Holiday had a thriving career as a jazz singer for many years before she lost her battle with substance abuse. 
+		Her autobiography was made into the 1972 film Lady Sings the Blues. In 2000, Billie Holiday was inducted into the Rock and Roll Hall of Fame.</p>
+		<br>
+		<p id = "bio">Jazz trumpeter <b>Henry Allen</b> was born on January 7, 1908, in New Orleans, Louisiana. In 1927, he joined King Oliver’s big band. 
+		From 1929 to 1933 he was in Luis Russell’s band. From 1933 t0 1934, he belonged to Fletcher Henderson’s big band, 
+		and was in Mills Blue Rhythm band 1934 to 1937. He returned to Russell’s band and accompanied Louis Armstrong 1937–'40. 
+		Allen died on April 17, 1967 in New York City, N.Y.</p>
+	</div>
+</div>	
+	
+
+			</div>
+		</div>
+	</div>
+
+</div>
+<!--
+<div id="y-theme">
+    <a href="http://alvarotrigo.com/fullPage/utils/wordpress-y-theme.html"><img src="imgs/wodpress-y-theme-fullpage3.png" /></a>
+</div>
+-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/bower_components/fullpage.js/dist/jquery.fullpage.js"></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+            sectionsColor: ['#000', '#000', '#7BAABE', 'whitesmoke', '#ccddff'],
+            anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+            menu: '#menu',
+            css3: true,
+            scrollingSpeed: 1000
+        });
+
+        $('#showExamples').click(function(e){
+            e.stopPropagation();
+            e.preventDefault();
+            $('#examplesList').toggle();
+        });
+
+        $('html').click(function(){
+            $('#examplesList').hide();
+        });
+    });
+
+/*$('#section0').css('background-image', 'url(https://media.npr.org/assets/img/2013/10/31/gettyimages_90431595_wide-145ebe69a0a8604378b91deb482b740689da9be8.jpg?s=1400)').animate({ opacity: 1 }, { duration: 10000 });*/
+
+$(document).ready(function() {
+    $('#section0').animate({opacity: 0}, 0).css({'background-image': 'http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/images/harlem.jpg'}).css('width:2000px', 'height:700px').animate({opacity: 1}, 2500);
+});
+	
+	$("#trumpet").hide();
+	$("#trumpet").fadeIn(8000);
+	$("#jazz").hide();
+	$("#jazz").fadeIn(8000);
+	$("#jazz2").hide();
+	$("#jazz2").fadeIn(8000);
+	
+	var audio = new Audio('http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/music/Go%20Harlem%20-%20Chick%20Webb%20(1).mp3');
+	audio.play();
+	
+	// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+var audioPlayer = $(".audio-player")[0];
+
+function pad(n) {
+	if(n < 10) { return "0" + n;
+	} else { return n.toString(); }
+}
+
+function formatTime(seconds) {
+	seconds = Math.floor(seconds);
+	if(seconds < 60) { return "00:" + pad(seconds) }
+	else { return pad(parseInt(seconds / 60, 10)) + ":" + pad(seconds % 60); }
+}
+
+function getTracksDurations() {
+	var tracks = $(".track-list li");
+	var i = 0;
+	$(tracks).each(function () {
+		var track = this, url = $(track).data("url");
+		var a = '<audio src="' + url + '" id="temp-player-' + i + '">';
+		$(".wrap").append(a);
+		$("#temp-player-" + i).on("loadedmetadata", function () {
+			var str = formatTime(this.duration);
+			$(this).remove();
+			$(track).find(".time").html(str);
+		});
+		i++;
+	});
+}
+
+window.RAF = (function () {
+	return  window.requestAnimationFrame       ||
+			window.webkitRequestAnimationFrame ||
+			window.mozRequestAnimationFrame    ||
+			function (callback) {
+				window.setTimeout(callback, 1000 / 60);
+			};
+})();
+
+function updatePlayer () {
+	var percent = audioPlayer.currentTime / audioPlayer.duration * 100;
+	$(".progress").val(percent);
+	$(".timer").html(formatTime(audioPlayer.currentTime));
+}
+
+$(function () {
+	getTracksDurations();
+	
+	$("li.track-info").on("click", function () {
+		$(this).addClass("active")
+				.siblings().removeClass("active");
+		$(audioPlayer).attr("src", $(this).data("url"));
+		$(".cover").css({ "background-image" : "linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, 0)), url(" + $(this).data("cover") + ")" });
+		audioPlayer.play();
+	});
+	
+	$(".play").on("click", function () {
+		audioPlayer.play();
+		$(this).hide();
+		$(".pause").show();
+	});
+	
+	$(".pause").on("click", function () {
+		audioPlayer.pause();
+		$(this).hide();
+		$(".play").show();
+	});
+	
+	$(".stop").on("click", function () {
+		audioPlayer.currentTime = 0;
+		audioPlayer.pause();
+	});
+	
+	$(".prev").on("click", function () {
+		$(".track-list li.active:not(:first-child)").removeClass("active")
+				.prev().addClass("active").click();
+	});
+	
+	$(".next").on("click", function () {
+		$(".track-list li.active:not(:last-child)").removeClass("active")
+				.next().addClass("active").click();
+	});
+	
+	$(".volume-down").on("click", function () {
+		audioPlayer.volume -= .1;
+	});	
+	$(".volume-up").on("click", function () {
+		audioPlayer.volume += .1;
+	});
+	
+	$(".progress").on("click", function (e) {
+		var percent = (e.clientX - $(this).offset().left)  / $(this).width() * 100;
+		audioPlayer.currentTime = percent * audioPlayer.duration / 100;
+	});
+	
+	$(audioPlayer).on("pause", function () {
+		$(".pause").hide();
+		$(".play").show();
+	});
+	
+	$(audioPlayer).on("play", function () {
+		$(".play").hide();
+		$(".pause").show();
+	});
+	
+	$(audioPlayer).on("ended", function () {
+		$(".track-list li.active:not(:last-child)").next().click();
+	});
+	
+	//load first track
+	$(audioPlayer).attr("src", $(".track-list li.active").data("url"));
+	$(".cover").css({ "background-image" : "linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, 0)), url(" + $(".track-list li.active").data("cover") + ")" });
+	
+	(function animLoop() {
+		RAF(animLoop);
+		updatePlayer();
+	})();
+});
+
+function loadApp() {
+
+	// Create the flipbook
+
+	$('.flipbook').turn({
+			// Width
+
+			width:922,
+			
+			// Height
+
+			height:600,
+
+			// Elevation
+
+			elevation: 50,
+			
+			// Enable gradients
+
+			gradients: true,
+			
+			// Auto center this flipbook
+
+			autoCenter: true
+
+	});
+}
+
+// Load the HTML4 version if there's not CSS transform
+
+yepnope({
+	test : Modernizr.csstransforms,
+	yep: ['http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/bower_components/turn.js/turnjs4/lib/turn.js'],
+	nope: ['http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/bower_components/turn.js/turnjs4/lib/turn.html4.min.js'],
+	both: ['http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/styles/basic.css'],
+	complete: loadApp
+});
+</script>
+<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/bower_components/jquery/dist/jquery.js"></script>
+    <script src="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/bower_components/tether/dist/js/tether.js"></script>
+    <script src="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/bower_components/modernizr/modernizr.js"></script>
+    <script src="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/bower_components/fullpage.js/dist/jquery.fullpage.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/plugins.js -->
+    <script src="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/bower_components/bootstrap/js/dist/util.js"></script>
+    <script src="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/bower_components/bootstrap/js/dist/alert.js"></script>
+    <script src="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/bower_components/bootstrap/js/dist/button.js"></script>
+    <script src="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/bower_components/bootstrap/js/dist/carousel.js"></script>
+    <script src="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/bower_components/bootstrap/js/dist/collapse.js"></script>
+    <script src="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/bower_components/bootstrap/js/dist/dropdown.js"></script>
+    <script src="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/bower_components/bootstrap/js/dist/modal.js"></script>
+    <script src="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/bower_components/bootstrap/js/dist/scrollspy.js"></script>
+    <script src="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/bower_components/bootstrap/js/dist/tab.js"></script>
+    <script src="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/bower_components/bootstrap/js/dist/tooltip.js"></script>
+    <script src="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/bower_components/bootstrap/js/dist/popover.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="http://sulley.cah.ucf.edu/~ti153451/DIG4104/Project_Two/Project2/app/scripts/main.js"></script>
+    <!-- endbuild -->
+
+</body>
+</html>
